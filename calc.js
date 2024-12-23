@@ -53,7 +53,7 @@ function handleSymbol(symbol) {
             break;
         case '=':
             if (previousOperation) {
-                doOperation(parseFloat(answerDisplay)); // Use `parseFloat` for calculations
+                doOperation(parseFloat(answerDisplay));
                 previousOperation = null;
                 answerDisplay = '' + runningTotal;
                 runningTotal = 0;
@@ -63,7 +63,7 @@ function handleSymbol(symbol) {
         case 'cos':
         case 'sin':
         case 'tan':
-            previousOperation = symbol; // Store the operation for later use
+            previousOperation = symbol;
             break;
     }
 }
@@ -74,13 +74,13 @@ function doOperation(realAnswer) {
             runningTotal = Math.log(realAnswer);
             break;
         case 'sin':
-            runningTotal = Math.sin(realAnswer); // Convert to radians
+            runningTotal = Math.sin(realAnswer);
             break;
         case 'cos':
-            runningTotal = Math.cos(realAnswer); // Convert to radians
+            runningTotal = Math.cos(realAnswer);
             break;
         case 'tan':
-            runningTotal = Math.tan(realAnswer); // Convert to radians
+            runningTotal = Math.tan(realAnswer);
             break;
     }
 }
