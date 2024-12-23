@@ -74,13 +74,13 @@ function doOperation(realAnswer) {
             runningTotal = Math.log(realAnswer);
             break;
         case 'sin':
-            runningTotal = Math.sin((realAnswer * Math.PI) / 180); // Convert to radians
+            runningTotal = Math.sin(realAnswer); // Convert to radians
             break;
         case 'cos':
-            runningTotal = Math.cos((realAnswer * Math.PI) / 180); // Convert to radians
+            runningTotal = Math.cos(realAnswer); // Convert to radians
             break;
         case 'tan':
-            runningTotal = Math.tan((realAnswer * Math.PI) / 180); // Convert to radians
+            runningTotal = Math.tan(realAnswer); // Convert to radians
             break;
     }
 }
